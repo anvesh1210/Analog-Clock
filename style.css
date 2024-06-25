@@ -9,7 +9,7 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: black;
+    background-color: lightblue;
 }
 
 .clock{
@@ -51,7 +51,8 @@ body{
     height: 230px;
 }
 
-.hr, .mn, .sc{
+
+.hr, .mn, .sc, .bd{
     display: flex;
     justify-content: center;
     position: absolute;
@@ -62,19 +63,22 @@ body{
     width: 6px;
     height: 80px;
     content: "";
-    background-color: pink;
+    background-color: red;
     z-index: 10;
     position: absolute;
+    border-radius: 50%;
 }
 
 .mn::before{
     width: 4px;
-    height: 90px;
+    height: 100px;
     content: "";
-    background-color: white;
+    background-color: yellow;
     position: absolute;
     z-index: 11;
+    border-radius: 50%;
 }
+
 
 .sc::before{
     width: 2px;
@@ -83,4 +87,21 @@ body{
     background-color: aqua;
     position: absolute;
     z-index: 12;
+    border-radius: 50%;
+}
+
+
+.clock {
+    border: 4px solid palegoldenrod;
+    border-radius: 50%;
+    background-color: black;
+}
+
+p{
+    color: white;
+    margin-top: 190px;
+    font-size: medium;
+    font-family: "Playwrite US Trad", cursive;
+  font-optical-sizing: auto;
+
 }
